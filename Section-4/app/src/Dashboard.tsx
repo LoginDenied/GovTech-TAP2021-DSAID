@@ -5,7 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import "./Dashboard.css";
 import axios from "axios";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { propTypes } from 'react-bootstrap/esm/Image';
 
 interface DashboardProps {
 }
@@ -37,6 +36,7 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
         };
     }
 
+    // Common function to fetch data from API and save to state
     fetchAPIData(startDate: Date, endDate: Date) {
         const url = "https://api.covid19api.com/country/singapore?from=" + startDate.toISOString() + "&to=" + endDate.toISOString();
         console.log(url)
@@ -54,10 +54,12 @@ class Dashboard extends React.Component<DashboardProps, DashboardState> {
         });
     }
 
+    // Fetch data when component is ready
     componentDidMount() {
         this.fetchAPIData(this.state.startDate, this.state.endDate);
     }
 
+    // Functions for DatePicker to set start and end dates
     setStartDate(date: Date) {
         const currentState = this.state
         this.fetchAPIData(date, currentState.endDate)
