@@ -22,4 +22,4 @@ for file_path in file_paths:
     # Add above_100 field
     df["above_100"] = np.where(df["price"] > 100, True, False)
     # # Save output file
-    df.to_csv(os.path.join(cwd, "datasets", "processed", os.path.basename(file_path)))
+    df.to_csv(os.path.join(cwd, "datasets", "processed", os.path.basename(file_path)), index=False)
