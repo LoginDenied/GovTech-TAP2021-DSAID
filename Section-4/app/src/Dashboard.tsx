@@ -150,17 +150,23 @@ class Visualization extends React.Component<VisualizationProps> {
                             <Line 
                                 type="monotone"
                                 dataKey="Confirmed"
-                                stroke="#800000" activeDot={{ r: 8 }}
+                                stroke="#000000" 
+                                activeDot={{ r: 8 }}
                             />
                             <Line 
                                 type="monotone"
                                 dataKey="Recovered"
-                                stroke="#008000" activeDot={{ r: 8 }}
+                                stroke="#008000"
                             />
                             <Line 
                                 type="monotone"
                                 dataKey="Deaths"
-                                stroke="#000090" activeDot={{ r: 8 }}
+                                stroke="#000090"
+                            />
+                            <Line 
+                                type="monotone"
+                                dataKey="Active"
+                                stroke="#800000"
                             />
                         </LineChart>
                     </ResponsiveContainer>
