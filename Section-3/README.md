@@ -1,6 +1,6 @@
 # Question 3
 ## Architecture Diagram
-![Architecture Diagram](Question 3 Architecture Diagram.png)
+![Architecture Diagram](Question%203%20Architecture%20Diagram.png)
 ## Assumptions
 ### Question Related
 - It is assumed that the sentence "The company would like to save processed images for a minimum of 7 days for archival purposes." means that only the post-processed images needs to be saved.
