@@ -18,6 +18,8 @@
     - Normally ignored but provided to show what python version was used for ease of reproducibility 
   - crontab
     - Contains cron command normally set in crontab to schedule tasks
+    - **IMPT:** python would need to be changed to be python3 depending on the OS in use
+    - **IMPT:** The full path for the "data-processing.py" file needs to replace "./data-processing.py"
   - data-processing<span>.py
     - Main python file for processing CSVs
   - requirements.txt
