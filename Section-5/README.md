@@ -6,12 +6,12 @@
     - Main data file
   - _car.names_
     - File containing information about dataset
-  - .python-version
-    - Normally ignored but provided to show what python version was used for ease of reproducibility
-  - prediction<span>.py
-    - Main python file for performing processing, a simple model selection and performing the required prediction
-  - requirements.txt
-    - Requirements file for pip install
+- .python-version
+  - Normally ignored but provided to show what python version was used for ease of reproducibility
+- prediction<span>.py
+  - Main python file for performing processing, a simple model selection and performing the required prediction
+- requirements.txt
+  - Requirements file for pip install
 ## Assumptions
 ### Prediction Related
 - It is assumed that the parameters given for prediction, "Maintenance = High Number of doors = 4 Lug Boot Size = Big Safety = High Class Value = Good" has leftout persons which is available in the dataset on purpose and thus ignored
