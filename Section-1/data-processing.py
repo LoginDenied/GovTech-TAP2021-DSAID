@@ -5,6 +5,7 @@ import pandas as pd
 import numpy as np
 
 cwd = os.getcwd()
+# Get all CSVs in folder
 file_paths = glob.glob(os.path.join(cwd, "datasets", "raw", "*.csv"))
 for file_path in file_paths:
     # Read file into dataframe
