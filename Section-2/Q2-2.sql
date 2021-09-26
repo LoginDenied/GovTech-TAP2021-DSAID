@@ -1,0 +1,1 @@
+SELECT C.Manufacturer, COUNT(C.Manufacturer) AS SalesCount FROM Car AS C, Sale AS S WHERE C.SerialNumber = S.SerialNumber GROUP BY C.Manufacturer ORDER BY SalesCount DESC LIMIT 3;
